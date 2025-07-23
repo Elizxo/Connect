@@ -28,7 +28,8 @@ const Navbar = () => {
       <style>{`
         .nav-links-highlight {
           position: relative;
-          display: inline-block;
+          display: flex;
+          gap: 1rem;
         }
         .nav-links-highlight::before {
           content: '';
@@ -43,7 +44,7 @@ const Navbar = () => {
           opacity: 0;
           transition: opacity 0.3s ease;
           border-radius: 0.375rem;
-          z-index: 10;
+          z-index: 0; /* behind the text */
         }
         .nav-links-highlight:hover::before {
           opacity: 1;
@@ -63,7 +64,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="hidden md:flex items-center space-x-4 nav-links-highlight">
+            <div className="hidden md:flex nav-links-highlight items-center">
               <NavLink
                 to="/events"
                 className={({ isActive }) =>
