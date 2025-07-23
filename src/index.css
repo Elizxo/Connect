@@ -64,28 +64,24 @@
 
 
 /* Container for hover effect */
-.navbar-hover {
+.nav-highlight-effect {
     position: relative;
-    overflow: hidden;
 }
 
-/* Highlight element */
-.navbar-hover::before {
+.nav-highlight-effect::before {
     content: '';
     position: absolute;
     top: 0;
     left: var(--mouse-x, 50%);
     width: 120px;
     height: 100%;
-    background: rgba(255, 192, 203, 0.2); 
+    background: rgba(255, 192, 203, 0.15);
     transform: translateX(-50%);
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 50px;
 }
 
-/* Show on hover */
-.navbar-hover:hover::before {
+.nav-highlight-effect:hover::before {
     opacity: 1;
 }
