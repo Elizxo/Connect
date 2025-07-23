@@ -6,8 +6,22 @@ const Navbar = () => {
     const activeLink = "bg-slate-700 text-white px-3 py-2 rounded-md text-sm font-medium";
     const normalLink = "text-slate-300 hover:bg-slate-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium";
 
+    useEffect(() => {
+        const navbar = document.querySelector('.nav-highlight-effect');
+        if (!navbar) return;
+
+        const handleMouseMove = (e) => {
+            const rect = navbar.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            navbar.style.setProperty('--mouse-x', `${x}px`);
+        };
+
+        navbar.addEventListener('mousemove', handleMouseMove);
+        return () => navbar.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
     return (
-        <nav className="navbar-hover bg-slate-800 shadow-lg">
+        <nav className="nav-highlight-effect bg-slate-800 shadow-lg relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16 relative">
                     <div className="flex items-center">
