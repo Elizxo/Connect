@@ -11,7 +11,6 @@ const ProfilePage = () => {
                 BACKGROUND STARS (Decorative)
             ================================= */}
             <div className="absolute inset-0 pointer-events-none z-0">
-                {/* Generate many stars with different sizes, positions, and opacities */}
                 
                 {/* Top Area Stars */}
                 <div className="absolute top-6 left-6 text-gray-400 opacity-30">
