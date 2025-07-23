@@ -2,20 +2,69 @@ import React from 'react';
 import { UserCircleIcon } from '@heroicons/react/24/solid';
 import { mockCurrentUser } from '../data/mockData';
 
+const Star = ({ size }) => (
+    <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        className="text-gray-400"
+    >
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+    </svg>
+);
+
 const ProfilePage = () => {
     return (
         <div className="relative min-h-screen overflow-hidden bg-transparent">
             
-            {/* Stars Background */}
+            {/* =========================
+                STARS BACKGROUND
+            ========================== */}
             <div className="absolute inset-0 pointer-events-none z-0">
-                {/* Star Top-Left */}
-                <div className="absolute top-6 left-6 text-gray-400 opacity-30">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
+                
+                {/* Top Stars */}
+                <div className="absolute top-6 left-6 opacity-30">
+                    <Star size={40} />
                 </div>
-                {/* ADD STARS SECTION */}
+                <div className="absolute top-10 right-8 opacity-25">
+                    <Star size={35} />
+                </div>
+                <div className="absolute top-20 left-1/3 opacity-20">
+                    <Star size={20} />
+                </div>
+                <div className="absolute top-5 right-1/4 opacity-35">
+                    <Star size={28} />
+                </div>
+
+                {/* Middle Stars */}
+                <div className="absolute top-1/2 left-10 opacity-25">
+                    <Star size={18} />
+                </div>
+                <div className="absolute top-1/3 right-1/3 opacity-30">
+                    <Star size={25} />
+                </div>
+                <div className="absolute top-2/3 left-1/2 opacity-20">
+                    <Star size={22} />
+                </div>
+
+                {/* Bottom Stars */}
+                <div className="absolute bottom-10 left-8 opacity-20">
+                    <Star size={32} />
+                </div>
+                <div className="absolute bottom-12 right-10 opacity-30">
+                    <Star size={28} />
+                </div>
+                <div className="absolute bottom-20 left-1/4 opacity-15">
+                    <Star size={24} />
+                </div>
+                <div className="absolute bottom-1/4 right-1/4 opacity-25">
+                    <Star size={30} />
+                </div>
             </div>
+
+            {/* =========================
 
             {/* Profile Card */}
             <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg relative z-10 mt-10 overflow-hidden">
