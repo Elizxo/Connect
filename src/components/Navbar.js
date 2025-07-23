@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { StarIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/solid';
-import './Navbar.css';
+import './index.css';
 
 const Navbar = () => {
     const activeLink = "bg-slate-700 text-white px-3 py-2 rounded-md text-sm font-medium";
