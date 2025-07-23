@@ -16,10 +16,10 @@ const EventCard = ({ event, isInterested, onInterestToggle }) => (
       </div>
       <button 
         onClick={() => onInterestToggle(event.id)}
-        className={`w-full font-bold py-2 px-4 rounded-lg transition-all duration-500 flex items-center justify-center space-x-2 ${
-          isInterested
-            ? 'bg-gradient-to-r from-pink-600 via-pink-200 to-pink-600 text-white hover:from-pink-700 hover:via-pink-300 hover:to-pink-700'
-            : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+        className={`w-full font-bold py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 ${
+          isInterested 
+          ? 'bg-green-500 text-white hover:bg-green-600' 
+          : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
         }`}
       >
         <HeartIcon className="h-5 w-5" />
