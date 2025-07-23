@@ -4,7 +4,7 @@ import { mockCurrentUser } from '../data/mockData';
 
 const ProfilePage = () => {
     return (
-        <div className="relative min-h-screen bg-gray-800 overflow-hidden">
+        <div className="relative min-h-screen overflow-hidden bg-transparent">
             {/* Stars Background */}
             <div className="absolute inset-0 pointer-events-none z-0">
                 {/* Star Top-Left */}
@@ -34,7 +34,7 @@ const ProfilePage = () => {
             </div>
 
             {/* Profile Card */}
-            <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg relative z-10">
+            <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg relative z-10 mt-10">
                 <div className="flex items-center space-x-6 mb-8">
                     <UserCircleIcon className="h-24 w-24 text-slate-300"/>
                     <div>
@@ -56,9 +56,9 @@ const ProfilePage = () => {
                         <label className="block text-sm font-medium text-slate-700 mb-1">Short Bio</label>
                         <textarea defaultValue={mockCurrentUser.bio} rows="4" className="w-full px-4 py-2 border border-slate-300 rounded-md"></textarea>
                     </div>
-                    
-                    {/* Removed Interests Section */}
 
+                    {/* Removed blue interest tags */}
+                    
                     <div className="pt-4">
                         <button type="submit" className="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition duration-300">
                             Save Changes
