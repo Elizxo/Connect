@@ -11,33 +11,45 @@ const ProfilePage = () => {
                 BACKGROUND STARS (Decorative)
             ================================= */}
             <div className="absolute inset-0 pointer-events-none z-0">
+                {/* Generate many stars with different sizes, positions, and opacities */}
                 
-                {/* Star - Top Left Corner */}
+                {/* Top Area Stars */}
                 <div className="absolute top-6 left-6 text-gray-400 opacity-30">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
+                    <Star size={40}/>
                 </div>
-
-                {/* Star - Top Right Corner */}
                 <div className="absolute top-10 right-8 text-gray-400 opacity-25">
-                    <svg width="35" height="35" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
+                    <Star size={35}/>
+                </div>
+                <div className="absolute top-20 left-1/3 text-gray-400 opacity-20">
+                    <Star size={20}/>
+                </div>
+                <div className="absolute top-5 right-1/4 text-gray-400 opacity-35">
+                    <Star size={28}/>
                 </div>
 
-                {/* Star - Bottom Left Corner */}
+                {/* Middle Stars */}
+                <div className="absolute top-1/2 left-10 text-gray-400 opacity-25">
+                    <Star size={18}/>
+                </div>
+                <div className="absolute top-1/3 right-1/3 text-gray-400 opacity-30">
+                    <Star size={25}/>
+                </div>
+                <div className="absolute top-2/3 left-1/2 text-gray-400 opacity-20">
+                    <Star size={22}/>
+                </div>
+
+                {/* Bottom Stars */}
                 <div className="absolute bottom-10 left-8 text-gray-400 opacity-20">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
+                    <Star size={32}/>
                 </div>
-
-                {/* Star - Bottom Right Corner */}
                 <div className="absolute bottom-12 right-10 text-gray-400 opacity-30">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                    </svg>
+                    <Star size={28}/>
+                </div>
+                <div className="absolute bottom-20 left-1/4 text-gray-400 opacity-15">
+                    <Star size={24}/>
+                </div>
+                <div className="absolute bottom-1/4 right-1/4 text-gray-400 opacity-25">
+                    <Star size={30}/>
                 </div>
             </div>
 
