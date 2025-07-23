@@ -44,9 +44,6 @@
     transform: translateY(0px);
 }
 
-
-}
-
 .save-button-pfp.loading::after {
     content: '';
     position: absolute;
