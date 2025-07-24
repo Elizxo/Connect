@@ -1,14 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { mockEvents, mockCurrentUser } from '../data/mockData';
-
+import ChatInterface from '../components/ChatInterface'; // Make sure this is the correct path
 
 const ChatPg = () => {
   return (
-    <main className="min-h-[calc(100vh-8rem)] p-6 bg-white">
+    <main className="min-h-[calc(100vh-8rem)] p-6 bg-white flex flex-col items-center">
       <h1 className="text-3xl font-bold mb-6">Chat Page</h1>
-      {/* chat */}
-      <p>Welcome to the chat! Start a conversation here.</p>
+      
+      {/* Chat Box */}
+      <div className="w-full max-w-lg border rounded-xl shadow-md overflow-hidden">
+        <ChatInterface />
+      </div>
     </main>
   );
 };
