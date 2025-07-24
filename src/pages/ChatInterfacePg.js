@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './index.css';
+import './ChatContainer.css';
 
 const ChatInterface = () => {
     const [messages, setMessages] = useState([
