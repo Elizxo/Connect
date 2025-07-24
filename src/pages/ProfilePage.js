@@ -113,7 +113,7 @@ const ProfilePage = () => {
                                 {buttonState === 'loading'
                                     ? 'Saving...'
                                     : buttonState === 'success'
-                                    ? '✓ Changes Saved!'
+                                    ? 'Updates saved successfully'
                                     : 'Save Changes'}
                             </button>
                         </div>
