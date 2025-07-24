@@ -21,9 +21,9 @@ function App() {
         <Route path="/events/:id" element={<Layout><EventDetailPage /></Layout>} />
         <Route path="/dashboard" element={<Layout><DashboardPage /></Layout>} />
         <Route path="/profile" element={<Layout><ProfilePage /></Layout>} />
-        <Route path="/chat" element={<Layout><ChatPg /></Layout>} />   {/* Add this! */}
+        <Route path="/chat" element={<Layout><ChatPg /></Layout>} />  
 
-        {/* Login page - no Layout */}
+        {/* Login page  */}
         <Route path="/" element={<LoginPage />} />
       </Routes>
     </Router>
