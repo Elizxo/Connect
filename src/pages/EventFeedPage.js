@@ -14,9 +14,11 @@ const EventCard = ({ event, isInterested, onInterestToggle }) => (
         <p className="flex items-center"><CalendarIcon className="h-5 w-5 mr-2 text-slate-400"/> {event.date}</p>
         <p className="flex items-center"><MapPinIcon className="h-5 w-5 mr-2 text-slate-400"/> {event.location}</p>
       </div>
-<button
+
+
+  <button 
   onClick={() => onInterestToggle(event.id)}
-  className={`interested-button ${isInterested ? 'active' : ''}`}
+  className="interested-button"
 >
   <HeartIcon className="h-5 w-5" />
   <span>{isInterested ? "I'm Interested!" : "I'm Interested"}</span>
