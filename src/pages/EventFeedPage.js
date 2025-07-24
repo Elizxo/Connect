@@ -14,21 +14,16 @@ const EventCard = ({ event, isInterested, onInterestToggle }) => (
         <p className="flex items-center"><CalendarIcon className="h-5 w-5 mr-2 text-slate-400"/> {event.date}</p>
         <p className="flex items-center"><MapPinIcon className="h-5 w-5 mr-2 text-slate-400"/> {event.location}</p>
       </div>
-      <button 
-        onClick={() => onInterestToggle(event.id)}
-        className={`w-full font-bold py-2 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 ${
-          isInterested 
-          ? 'bg-green-500 text-white hover:bg-green-600' 
-          : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
-        }`}
-      >
-        <HeartIcon className="h-5 w-5" />
-        <span>{isInterested ? "I'm Interested!" : "I'm Interested"}</span>
-      </button>
+<button
+  onClick={() => onInterestToggle(event.id)}
+  className={`interested-button ${isInterested ? 'active' : ''}`}
+>
+  <HeartIcon className="h-5 w-5" />
+  <span>{isInterested ? "I'm Interested!" : "I'm Interested"}</span>
+</button>
     </div>
   </div>
 );
-
 const EventFeedPage = () => {
   const [interested, setInterested] = useState(mockCurrentUser.interestedEvents);
 
