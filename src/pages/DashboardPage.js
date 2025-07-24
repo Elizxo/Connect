@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/solid';
 import { mockEvents, mockCurrentUser } from '../data/mockData';
-import './ChatGlobal.css';
 
 const DashboardPage = () => {
   const interestedEvents = mockEvents.filter(event => mockCurrentUser.interestedEvents.includes(event.id));
