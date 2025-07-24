@@ -117,11 +117,18 @@ const ProfilePage = () => {
                             </textarea>
                         </div>
 
-                        {/* Save Button */}
-                        <div className="pt-4">
-                            <button type="submit" className="save-button-pfp">
-                                Save Changes
-                            </button>
+                           {/* Save Button */}
+                    <div className="pt-4">
+                        <button
+                            type="submit"
+                            className={`save-button-pfp ${buttonState}`}
+                        >
+                            {buttonState === 'loading'
+                                ? 'Saving...'
+                                : buttonState === 'success'
+                                ? '✓ Changes Saved!'
+                                : 'Save Changes'}
+                        </button>
                         </div>
 
                     </form>
