@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar'; 
-import Footer from './Footer';
+import { Link } from 'react-router-dom';
+import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/solid';
 import { mockEvents, mockCurrentUser } from '../data/mockData';
 
 const ChatPg = () => {
