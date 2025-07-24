@@ -40,7 +40,12 @@ const EventDetailPage = () => {
                     <h1 className="text-4xl font-bold text-slate-900">{event.title}</h1>
                     <div className="text-slate-600 text-lg flex space-x-6 my-4">
                         <p className="flex items-center"><CalendarIcon className="h-6 w-6 mr-2 text-slate-400"/> {event.date}</p>
-                        <p className="flex items-center"><MapPinIcon className="h-6 w-6 mr-2 text-slate-400"/> {event.location}</p>
+                        <p className="flex items-center">
+        <img
+            src="https://images.unsplash.com/vector-1753347726357-8121e275a797?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Location Icon"
+            className="h-6 w-6 mr-2 object-contain"
+        />
                     </div>
                     <div className="mt-8">
                         <h2 className="text-2xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-4">Who's Interested?</h2>
