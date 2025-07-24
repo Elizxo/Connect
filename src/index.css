@@ -3,7 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-//PROFILE SAVE BUTTON
+
+/* PROFILE SAVE BUTTON */
 .save-button-pfp {
     width: 100%;
     background: #4285f4;
@@ -44,6 +45,12 @@
     transform: translateY(0px);
 }
 
+/* Loading State */
+.save-button-pfp.loading {
+    background: #a0aec0;
+    pointer-events: none;
+}
+
 .save-button-pfp.loading::after {
     content: '';
     position: absolute;
@@ -56,6 +63,11 @@
     border-top: 2px solid white;
     border-radius: 50%;
     animation: spin 1s linear infinite;
+}
+
+/* Success State */
+.save-button-pfp.success {
+    background: #38a169;
 }
 
 @keyframes spin {
