@@ -10,7 +10,7 @@ import EventFeedPage from './pages/EventFeedPage';
 import EventDetailPage from './pages/EventDetailPage';
 import DashboardPage from './pages/DashboardPage';
 import ProfilePage from './pages/ProfilePage';
-import ChatPg from './pages/ChatPg';  // <- your chat page here
+import ChatPg from './pages/ChatPage';  
 
 function App() {
   return (
