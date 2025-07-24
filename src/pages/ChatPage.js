@@ -1,5 +1,5 @@
 import React from 'react';
-import ChatInterface from '../components/ChatInterface'; // Make sure this is the correct path
+import ChatInterface from '../scr/ChatInterface'; 
 
 const ChatPg = () => {
   return (
