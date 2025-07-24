@@ -72,7 +72,7 @@
     to { transform: rotate(360deg); }
 }
 ////////////////////////////
-/* Orange Interest Button */
+/* Orange "I'm Interested" Button */
 .interested-button {
     width: 100%;
     background: #f97316; /* Orange base */
@@ -89,7 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem; 
+    gap: 0.5rem; /* Space between icon and text */
 }
 
 .interested-button::before {
@@ -108,16 +108,11 @@
 }
 
 .interested-button:hover {
-    background: #ea580c; /* Darker orange hover */
+    background: #ea580c; /* Darker orange on hover */
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(249, 115, 22, 0.3);
 }
 
 .interested-button:active {
-    transform: translateY(0);
-}
-
-/* Active State (clicked) */
-.interested-button.active {
-    background: #d97706; /* Amber-like color */
+    transform: translateY(0px);
 }
