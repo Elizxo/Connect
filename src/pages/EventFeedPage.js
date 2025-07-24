@@ -21,6 +21,7 @@ const EventCard = ({ event, isInterested, onInterestToggle }) => (
   <HeartIcon className="h-5 w-5" />
   <span>{isInterested ? "I'm Interested!" : "I'm Interested"}</span>
 </button>
+
     </div>
   </div>
 );
